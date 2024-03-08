@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/6a5fd4429e.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <a href="#header"><img src="images/logo.png" class="logo"></a>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+
+                    <i class="fa-regular fa-circle-xmark" onclick="closemenu()"></i>
+                </ul>
+               
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+
+            <div class="header-text">
+                <p>Frontend Developer</p>
+                <h1>Hi, I'm <span>Seya</span> <br>Endo From London</h1>
+                <a href="images/Seid Resume.pdf" class="btn btn2" download>Download CV</a>
+            </div>
+        </div>
+    </div>
+
+    <!------------------------ about section ------------------------->
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+             <div class="about-col-1">
+                <img src="images/about.jpg">
+             </div>
+            <div class="about-col-2">
+                <h1 class="subtitle">About Me</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod odit, beatae minima earum neque consequuntur officia, eaque facilis ipsam voluptatum iste voluptatem distinctio repellendus debitis necessitatibus magnam. Unde, quibusdam magnam?</p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills"> 
+                    <ul>
+                        <li><span>Web Development</span><br>Interactive web application Development</li>
+                        <li><span>App Development</span><br>Building android/ios apps</li>
+                        <li><span>UI/UX</span><br>Designing web/app interfaces</li>
+                    </ul>
+                </div>
+
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>2021 - current</span><br>Frontend Developer at Alliance Tech</li>
+                        <li><span>2019 - 2021</span><br>UI/UX Designer at Unified Infotech
+                        </li>
+                        <li><span>2017 - 2019</span><br>Fullstack Developer at Cubix
+                        </li>
+                        <li><span>2016 - 2017</span><br>Internship at OpenXcell</li>
+                    </ul>
+                </div>
+
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2016</span><br>UI/UX Design Training at HTEC Group</li>
+                        <li><span>2016</span><br>MBA Software Engineering From University of London</li>
+                        <li><span>2014</span><br>BSc. Computer Science From University of Bristol</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <!-------------------- Services ----------------------->
+
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-mobile-screen-button"></i>
+                    <h2>App Development</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet culpa doloremque ut quidem, doloribus quasi quisquam ipsam delectus id possimus maxime. Ratione saepe impedit laborum quis iusto beatae, corporis consequatur!</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-laptop-code"></i>
+                    <h2>Web Development</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet culpa doloremque ut quidem, doloribus quasi quisquam ipsam delectus id possimus maxime. Ratione saepe impedit laborum quis iusto beatae, corporis consequatur!</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-figma"></i>
+                    <h2>UI/UX Design</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet culpa doloremque ut quidem, doloribus quasi quisquam ipsam delectus id possimus maxime. Ratione saepe impedit laborum quis iusto beatae, corporis consequatur!</p>
+                    <a href="#">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-------------------- Portfolio ----------------------->
+
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/port1.jpg">
+                    <div class="layer">
+                        <h3>Social Media App</h3>
+                        <p>The app will connect you with different people around the world with the same goal and interest. Check it out on Github</p>
+                        <a href="#"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/port2.jpg">
+                    <div class="layer">
+                        <h3>Code Editor</h3>
+                        <p>It is a very good code editor with multiple features which enhances and optimizes your code. Check it out on Github</p>
+                        <a href="#"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/port3.jpg">
+                    <div class="layer">
+                        <h3>E-Learning Platform</h3>
+                        <p>It is a platform which makes Education easy to access with high quality and performance. Check it out on Github</p>
+                        <a href="#"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <a href="#" class="btn">See More</a>
+
+        </div>
+    </div>
+    
+    <!---------------------------- Contact ------------------------------>
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1>Contact Me</h1>
+                    <p> <i class="fa-regular fa-envelope"></i> seya1234@gmail.com</p>
+                    <p> <i class="fa-solid fa-phone-volume"></i> 020 7123 4567</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-slack"></i></a>
+                    </div>
+                </div>
+                <div class="contact-right">
+                    <form action="POST">
+                        <input type="text" name="name" placeholder="Enter Your Name" required>
+                        <input type="email" name="email" placeholder="example@gmail.com" required>
+                        <textarea name="textarea"  cols="30" rows="6" placeholder="Leave a Message"></textarea>
+                        <button type="submit" class="btn btn3">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div class="copyright">
+            Copy right &copy; Made by Seid Endris!
+        </div>
+
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>

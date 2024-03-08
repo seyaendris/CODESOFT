@@ -1,0 +1,390 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+    background-color: #F0F8FF;
+    font-family: Arial, sans-serif;
+}
+
+nav {
+    background-color: rgb(222, 239, 249); 
+    padding: 7px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    z-index: 100;
+}
+
+.logo {
+    width: 30%;
+}
+.logo img {
+    height: 50px; 
+    width: auto;
+    padding-left: 10px;
+}
+
+.nav-links {
+    flex-grow: 1; 
+}
+
+.nav-links ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links li a {
+    color: black; 
+    text-decoration: none;
+    font-weight: bold;
+}
+.nav-links li a:hover {
+    color: #898989; 
+}
+
+.signin-button {
+    margin-left: 20px;
+}
+
+.signin-button .button {
+    padding: 10px 20px;
+    background-color: #3498db; 
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px; 
+}
+
+.signin-button .button:hover {
+    background-color: #2980b9; 
+}
+
+
+.main-content {
+    display: flex;
+    padding: 20px 50px;
+}
+.left-sidebar {
+    width: 40%;
+}
+.left-sidebar h1 {
+    font-size: 50px;
+    padding-bottom: 5px;
+    font-family: sans-serif;
+    padding-top: 100px;
+}
+
+.left-sidebar p {
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 100;
+    padding-top: 10px;
+}
+.left-sidebar img {
+    width: 50px;
+}
+
+.subscription-form {
+    max-width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 10px;
+    float: left;
+}
+.email-input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+.subscribe-button {
+    width: 100%;
+    padding: 10px;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.subscribe-button:hover {
+    background-color: #2980b9;
+}
+
+.right-sidebar {
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+    align-items: center;
+}
+.right-sidebar img {
+    width: 700px;
+}
+
+
+.about-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    background-color: #F0F8FF; 
+}
+
+.about-content {
+    flex: 1;
+    padding-left: 50px;
+}
+
+.about-content h2 {
+    font-size: 32px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.about-content p {
+    font-size: 18px;
+    color: #666;
+}
+
+.about-image {
+    flex: 1;
+}
+
+.about-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); 
+}
+
+
+.about-section .about-image {
+    transition: transform 0.5s ease;
+}
+
+
+.about-image:hover {
+    transform: translateY(-20px);
+}
+
+.services-section {
+    text-align: center;
+    padding: 50px;
+}
+
+.services-section h2 {
+    font-size: 32px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.services-section p {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 40px;
+}
+
+.services-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px; 
+}
+
+.service-card {
+    width: 100%;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); 
+    transition: all 0.3s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+}
+
+.service-icon {
+    margin-bottom: 20px;
+}
+
+.service-icon img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.service-card h3 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.service-card p {
+    font-size: 16px;
+    color: #666;
+}
+
+
+/* Contact */
+
+.contact-section {
+    text-align: center;
+    padding: 40px;
+}
+
+.contact-section h2 {
+    font-size: 32px;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.contact-section p {
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: #666;
+}
+
+.contact-container {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-group {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    font-size: 18px;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    border-radius: 5px;
+    border: none;
+    background-color: rgb(224, 224, 224);
+    font-weight: 500;
+    padding: 15px;
+    margin: 5px 0;
+    font-size: 15px;
+}
+
+.form-group textarea {
+    height: 150px;
+}
+
+.submit-button {
+    width: 200px;
+    height: 50px;
+    font-size: 18px;
+    padding: 10px 20px;
+    background-color: #2980b9;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+    background-color: #2471a3;
+}
+
+/* Footer */
+
+.footer-section {
+    color: #000;
+    padding: 50px 0;
+    background-color: rgb(222, 239, 249);}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer-logo img {
+    height: 50px;
+    width: auto;
+}
+
+.footer-links ul {
+    list-style: none;
+    display: flex;
+}
+
+.footer-links ul li {
+    margin-right: 20px;
+}
+
+.footer-links ul li:last-child {
+    margin-right: 0;
+}
+
+.footer-links ul li a {
+    color: #000;
+    text-decoration: none;
+}
+.footer-links ul li a:hover {
+    color: #3498db;
+}
+
+.social-links a {
+    color: #222;
+    text-decoration: none;
+    margin-right: 10px;
+    transition: color 0.3s ease;
+    font-size: 30px;
+}
+
+.social-links a:hover {
+    color: #3498db;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.footer-bottom p {
+    font-size: 14px;
+}
+
+#home,
+#about,
+#services,
+#contact {
+    scroll-margin-top: 50px; 
+    scroll-behavior: smooth;
+}
+
